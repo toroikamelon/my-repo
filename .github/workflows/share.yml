@@ -13,5 +13,5 @@ jobs:
     needs: [before]
     steps:
       - env:
-        RESULT: ${{ needs.before.outputs.result }}
-        run: echo "${RESULT}" 
+          RESULT: ${{ needs.before.outputs.result }}
+          run: echo "${RESULT}" 
