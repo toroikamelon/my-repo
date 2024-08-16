@@ -10,7 +10,7 @@ outputs:
     value: ${{ steps.current.outputs.date }}
     description:
 runs:
-  using: compsite
+  using: composite
   steps:
     - run: printenv | sort
       shell: bash
