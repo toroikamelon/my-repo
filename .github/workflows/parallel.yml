@@ -4,7 +4,7 @@ jobs:
   first:
     runs-on: ubuntu-latest
     steps:
-      - runs: sleep 10 && echo "First job"
+      - run: sleep 10 && echo "First job"
   second:
     runs-on: ubuntu-latest
     steps:
