@@ -4,7 +4,7 @@ inputs:
   enable-context:
     default: 'true'
     required: false
-    description:
+    description: 
 outputs:
   dumped-date:
     value: ${{ steps.current.outputs.date }}
@@ -15,7 +15,7 @@ runs:
     - run: printenv | sort
       shell: bash
     - run: echo "${CONTEXT}"
-      if: ${{ inputs.enable-context ++ 'true' }}
+      if: ${{ inputs.enable-context == 'true' }}
       env:
         CONTEXT: ${{ toJSON(github) }}
       shell: bash
