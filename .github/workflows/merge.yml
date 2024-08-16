@@ -9,8 +9,8 @@ jobs:
       pull-requests: write
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      steps:
-        - uses: actions/checkout@4
-        - run: |
-            gh pr review "${GITHUB_HEAD_REF}"
-            gh pr merge "${GITHUB_HEAD_REF}"
+    steps:
+      - uses: actions/checkout@4
+      - run: |
+          gh pr review "${GITHUB_HEAD_REF}"
+          gh pr merge "${GITHUB_HEAD_REF}"
