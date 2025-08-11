@@ -1,0 +1,9 @@
+name: Intermidate enviroment variables
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    env:
+      ACTOR: ${{ github.actor }}
+    steps:
+      - runs: echo "${ACTOR}"
