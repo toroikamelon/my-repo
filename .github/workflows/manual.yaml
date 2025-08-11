@@ -1,12 +1,12 @@
 name: Manual
 on:
   workflow_dispatch:
-  inputs:
-    greeting:
-      type: string
-      default: Hello
-      required: true
-      description: A cheeeful word
+    inputs:
+      greeting:
+        type: string
+        default: Hello
+        required: true
+        description: A cheeeful word
 jobs:
   run:
     runs-on: ubuntu-latest
