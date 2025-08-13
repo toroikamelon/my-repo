@@ -4,5 +4,5 @@ jobs:
   sleep:
     runs-on: ubuntu-latest
     timeout-minutes: 1
-    sleeps:
+    steps:
       - run: sleep 120
