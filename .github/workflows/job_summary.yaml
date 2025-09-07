@@ -1,0 +1,8 @@
+name: Job sammries
+on: push
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "## Example Title :rocket:" >> ${GITHUB_STEP_SUMMARY}
